@@ -36,7 +36,7 @@
       <div class="catalog-filter">
       	<form method="get" class="filter" action="catalog.html">
 	      	<fieldset>	  
-			        <legend class="filter-title">Стоимость:</legend>
+			        <legend class="filter-title filter-title-range">Стоимость:</legend>
 			     	<div class="filter-container">
 			     		<div class="filter-range">
 			     			<div class="filter-range-scale"></div>
@@ -44,70 +44,82 @@
 							<div class="filter-range-toggle toggle-min"></div>
 							<div class="filter-range-toggle toggle-max"></div>
 			     		</div>
+			     		<div class="filter-range-text">
+			     			<div class="filter-range-text1">
+				     			<p>
+				     				ОТ 
+				     				<input placeholder="0"  class="price-min">
+				     			</p>	
+				     		</div>	
+			     			<div class="filter-range-text2">
+				     			<p>		
+				     			   	ДО 
+				     		 		<input placeholder="15 000" class="price-max">
+				     			</p>
+				     		</div>
+			     		</div>
 			     	</div>
 			    </fieldset>
 			    <fieldset>
-		        <legend class="filter-title">Сетка:</legend>
-		        <div class="filter-container" >
-			        <ul class="filter-product-fat-list">
-			        	<li>
-			        		<input class="input-fat-list" type="radio" name="product-fat" value="percent_0" id="percent_0">
-			        		<label id="lfl" class="label-fat-list" for="percent_0"></label>
-			       
-			        	</li>
-			        	<li class="product-fat-list-items"> <p>0%</p></li>
-			        	<li>	           		
-		            		<input class="input-fat-list" type="radio" name="product-fat" value="percent_below_10" id="percent_below_10" checked>
-		            		<label id="lfl" class="label-fat-list" for="percent_below_10"></label> 
-		            	</li>
-		            	<li class="product-fat-list-items"> <p>до 10%</p></li>
-			        	<li>	
-		            		<input class="input-fat-list" type="radio" name="product-fat" value="percent_below_30" id="percent_below_30">
-		            		<label id="lfl" class="label-fat-list" for="percent_below_30"></label> 
-		            	</li>
-		            	<li class="product-fat-list-items"> <p>до 30%</p></li>
-			         	
+		        <legend class="filter-title filter-title-grid">Сетка:</legend>
+		        <div class="filter-container">
+			        <ul class="filter-grid">
+			        	<li class="filter-grid-list">
+			        		<input class="input-filter-grid" type="radio" name="filter-grid-element" value="filter-grid-element-adaptive" id="element-adaptive">
+			        		<label id="label-element1" class="label-element label-element-adaptive" for="element-adaptive"></label>
+			        		<div class="filter-grid-text"><p>Адаптивная</p></div>
+			        	</li>			        	
+			        	<li class="filter-grid-list">	           		
+		            		<input class="input-filter-grid" type="radio" name="filter-grid-element" value="filter-grid-element-fixed" id="element-fixed" checked>
+		            		<label id="label-element2" class="label-element label-element-fixed" for="element-fixed"></label> 
+		            		<div class="filter-grid-text"><p>Фиксированная</p></div>
+		            	</li>		            	
+			        	<li class="filter-grid-list">	
+		            		<input class="input-filter-grid" type="radio" name="filter-grid-element" value="filter-grid-element-liquid" id="element-liquid">
+		            		<label id="label-element3" class="label-element label-element-liquid" for="element-liquid"></label> 
+		            		<div class="filter-grid-text"><p>Резиновая</p></div>
+		            	</li>		            			         	
 		            </ul>
 		        </div>
 		    </fieldset>
-		    <fieldset class="bottom-row">
-		        <legend class="filter-title">Особенности:</legend>
-		        <div class="filter-container" >
-			        <ul class="filter-filler">
-			        	<li>
-			        		<input class="input-filler-list" type="checkbox" name="chocolate" id="filler_chocolate"  checked>
-		            		<label class="label-filler-list" for="filler_chocolate"></label> 
+		    <fieldset>
+		        <legend class="filter-title filter-title-features">Особенности:</legend>
+		        <div class="features-container" >
+			        <ul class="filter-features">
+			        	<li class="filter-features-list">
+			        		<input class="input-features" type="checkbox" name="slider" id="slider"  checked>
+		            		<label id="label-features1" class="label-features" for="slider"></label>
+		            		<div class="filter-features-text"><p>Слайдер</p></div>
+			        	</li>			 
+			        	<li class="filter-features-list">
+			        		<input class="input-features"type="checkbox" name="advantages" id="advantages" checked>
+		            		<label id="label-features2" class="label-features" for="advantages"></label> 
+		            		<div class="filter-features-text"><p>Блок преимуществ</p></div>
+			        	</li>			        	
+			        	<li class="filter-features-list">
+			        		<input class="input-features" type="checkbox" name="news" id="news">
+		            		<label id="label-features3" class="label-features" for="news"></label> 
+		            		<div class="filter-features-text"><p>Новости</p></div>
+			        	</li>			        	
+			        	<li class="filter-features-list">
+			        		<input class="input-features" type="checkbox" name="galery" id="galery">
+		            		<label id="label-features4" class="label-features" for="galery"></label>
+		            		<div class="filter-features-text"><p>Галерея</p></div>
+			        	</li>			        	
+			        	<li class="filter-features-list">
+			        		<input class="input-features" type="checkbox" name="cart" id="cart">
+		            		<label id="label-features5" class="label-features" for="cart"></label> 
+		            		<div class="filter-features-text"><p>Корзина</p></div>
 			        	</li>
-			        	<li class="filler-list-items">шоколад</li>
-			        	<li>
-			        		<input class="input-filler-list"type="checkbox" name="sugar" id="filler_sugar"  checked>
-		            		<label class="label-filler-list" for="filler_sugar"></label> 
-			        	</li>
-			        	<li class="filler-list-items">сахарные присыпки</li>
-			        	<li>
-			        		<input class="input-filler-list" type="checkbox" name="frut" id="filler_frut">
-		            		<label class="label-filler-list" for="filler_frut"></label> 
-			        	</li>
-			        	<li class="filler-list-items">фрукты</li>
-			        	<li>
-			        		<input class="input-filler-list" type="checkbox" name="syrup" id="filler_syrup">
-		            		<label class="label-filler-list" for="filler_syrup"></label> 
-			        	</li>
-			        	<li class="filler-list-items">сиропы</li>
-			        	<li>
-			        		<input class="input-filler-list" type="checkbox" name="jam" id="filler_jam">
-		            		<label class="label-filler-list" for="filler_jam"></label> 
-			        	</li>
-			        	<li class="filler-list-items">джемы</li>
 			        </ul>	
 			    </div>
 		    </fieldset>
-		    <button class="">Показать</button>
+		    <button class="catalog-filter-button">Показать</button>
 			</form>
       </div>
       <div class="catalog">
       	<form method="get" class="filter" action="catalog.html">
-		        <div class="filter-prais" >
+		        <div class="filter-prais">
 			        <ul class="filter-prais-list">
 			        	<li>Сортировать:</li>
 			        	<li>
