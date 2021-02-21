@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+   <meta charset="utf-8">
+   <title>HTML Academy: Нёрдс</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+	type="text/javascript">
+	</script>
+   <script type="text/javascript" src="script.js"></script>
+</head>
+<body id="body" class="page-body">
+   <div class="main-header-container">
+      <header class="main-header">
+         <nav class="main-navigation">
+            <div class="main-logo">
+               <img src="img/nerds-logo.svg" width="160" height="55">
+            </div>
+            <ul class="main-navigation-list">
+               <li>Студия</li>
+               <li>Клиенты</li>
+               <li>Магазин</li>
+               <li>Контакты</li>
+            </ul>
+            <div class="cart">
+               <p>Корзина</p>
+            </div>
+         </nav>
+         <div class="slider">
+            <div class="slaid1 slaid" id="slaid1">
+               <div class="slaidinfo">
+                  <h2>Долго, дорого, скрупулезно.</h2>
+                  <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                  <button class="slaidbutton">УЗНАТЬ БОЛЬШЕ</button>
+               </div>
+               <div class="slaidimage">
+                  <img src="img/nerds-index-slide1.png">
+               </div>
+            </div>
+            <div class="slaid2 slaid" id="slaid2">
+               <div class="slaidinfo">
+                  <h2>Любим математику, как никто другой</h2>
+                  <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+                  <button class="slaidbutton">УЗНАТЬ БОЛЬШЕ</button>
+               </div>
+               <div class="slaidimage">
+                  <img src="img/nerds-index-slide2.png">
+               </div>
+            </div>
+            <div class="slaid3 slaid" id="slaid3">
+               <div class="slaidinfo">
+                  <h2>Только ночь, только хардкор</h2>
+                  <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                  <button class="slaidbutton">УЗНАТЬ БОЛЬШЕ</button>
+               </div>
+               <div class="slaidimage">
+                  <img src="img/nerds-index-slide3.png">
+               </div>
+            </div>
+            <div class="slaid-radio">
+               <input type="radio" checked class="radio_slaid" id="radio1" name="button" value="" onclick='myFunction1()'>
+               <label class="label-radio" id="label_radio1" for="radio1"></label>   
+               <input type="radio" class="radio_slaid label-radio2" id="radio2" name="button" value="" onclick='myFunction2()'>
+               <label class="label-radio label_radio2" id="label_radio2" for="radio2"></label>
+               <input type="radio" class="radio_slaid" id="radio3" name="button" value="" onclick='myFunction3()'>
+               <label class="label-radio" id="label_radio3" for="radio3"></label>
+            </div>
+         </div>
+      </header>
+   </div>
+   <main class="main">
+      <div class="advantages">
+         <div class="advantages-element advantages-element1">
+            <img src="img/illustration-1.jpg" width="300" height="146">
+            <h2 class="advantages-title">Веб-сайты</h2>
+            <p class="advantages-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <button class="advantages-button advantages-button1">Заказать</button>               
+         </div>
+         <div class="advantages-element advantages-element2">
+            <img src="img/illustration-2.jpg" width="300" height="146">
+            <h2 class="advantages-title">Приложения</h2>
+            <p class="advantages-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button class="advantages-button advantages-button2">Заказать</button>
+         </div>
+         <div class="advantages-element advantages-element3">
+            <img src="img/illustration-3.jpg" width="300" height="146">
+            <h2 class="advantages-title">Презентации</h2>
+            <p class="advantages-text">Вы даже не подозреваете,  насколько вы изумительны!</p>
+            <button class="advantages-button advantages-button3">Заказать</button>
+         </div>
+      </div>
+      <div class="about-us">
+         <div class="about-us-info">
+            <h2 class="about-us-info-title">Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
+            <p class="about-us-info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <ul class="about-us-info-list">
+               Выполняем заказы на разработку:
+               <li class="about-us-info-list-element">Веб-сайтов любой сложности</li>
+               <li class="about-us-info-list-element">Мобильных приложений для iOS и Android</li>
+               <li class="about-us-info-list-element">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+         </div>
+         <div class="about-us-picture">
+            <img src="img/about-us-picture.png">
+            <p class="about-us-picture-text">с 2004 года Любим точность во всем:</p>
+            <div class="about-us-picture-stats-container">
+               <div class="about-us-picture-stats">
+                  <p class="about-us-picture-stats-numbers">146</p>
+                  <p class="about-us-picture-stats-text">Уровень самоотдачи</p>
+               </div>
+               <div class="about-us-picture-stats">
+                  <p class="about-us-picture-stats-numbers">100</p>
+                  <p class="about-us-picture-stats-text">Соблюдение сроков</p>
+               </div>
+               <div class="about-us-picture-stats">
+                  <p class="about-us-picture-stats-numbers">50</p>
+                  <p class="about-us-picture-stats-text">Минимальная предоплата</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="partners">
+         <img src="img/partners-logo-2.png" width="199" height="68">
+         <img src="img/partners-logo-4.png" width="209" height="90">
+         <img src="img/partners-logo-3.png" width="185" height="52">
+         <img src="img/partners-logo-1.png" width="173" height="84">
+      </div>
+   </main>
+   <footer>
+      <div class="map">
+         <div class="contacts-map">
+            <h2>NЁRDS DESIGN STUDIO</h2>
+            <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br><br>
+            тел. +7 (812) 275-75-75</p>
+            <button class="contacts-map-button">Напишите нам</button>
+         </div>
+         <div id="yandexmap" class="yandexmap">
+         </div>
+      </div>
+      <div class="footer">
+         <div class="social">
+            <div class="social-element social-element-vk"><img src="img/vk-icon.svg"></div>
+            <div class="social-element social-element-fb"><img src="img/fb-icon.svg"></div>
+            <div class="social-element social-element-inst"><img src="img/insta-icon.svg"></div>
+         </div>
+         <div class="footer-text">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+         </div>
+      </div>
+   </footer>  	<script>
+					var map;
+					var marker;
+					function initMap ()
+					  {
+					  map = new ymaps.Map("yandexmap", {
+					    center: [59.939275, 30.329199],
+					    zoom: 16
+					    });
+					  map.behaviors.disable('scrollZoom');
+					  marker = new ymaps.Placemark([59.938635, 30.323118], {
+			            balloonContent: 'Маленькая иконка'
+			        		}, {
+			            iconLayout: 'default#image',
+			            iconImageHref: 'img/icons/map_mark.png',
+			            iconImageSize: [80, 140],
+			            iconImageOffset: [-37, -130],
+			        		})
+					  map.geoObjects.add(marker);
+					    }
+					  ymaps.ready(initMap);
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
-  </body>
-</html>
+				</script>
+</body>
