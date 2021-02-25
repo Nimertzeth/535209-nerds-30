@@ -17,16 +17,16 @@
       <header class="main-header-catalog">
          <nav class="main-navigation">
             <div class="main-logo">
-               <img src="img/nerds-logo.svg" width="160" height="55">
+              <a class="logo-link" href="index.html"> <img src="img/nerds-logo.svg" width="160" height="55"></a>
             </div>
             <ul class="main-navigation-list">
-               <li>Студия</li>
-               <li>Клиенты</li>
-               <li>Магазин</li>
-               <li>Контакты</li>
+               <li><a class="main-navigation-list-element" href="">Студия</a></li>
+               <li><a class="main-navigation-list-element" href="">Клиенты</a></li>
+               <li><a class="main-navigation-list-element on-page" href="">Магазин</a></li>
+               <li><a class="main-navigation-list-element" href="">Контакты</a></li>
             </ul>
             <div class="cart">
-               <p>Корзина</p>
+              <p><img src="img/cart-icon.svg"> <a class="main-navigation-list-element" href="">Корзина</a></p>
             </div>
          </nav>
 		 <h1 class="catalog-title">Магазин готовых шаблонов</h1>
@@ -38,7 +38,7 @@
 	      	<fieldset>	  
 			        <legend class="filter-title filter-title-range">Стоимость:</legend>
 			     	<div class="filter-container">
-			     		<div class="filter-range">
+			     		<div class="filter-range" >
 			     			<div class="filter-range-scale"></div>
 			     			<div class="filter-range-bar"></div>
 							<div class="filter-range-toggle toggle-min"></div>
@@ -63,20 +63,20 @@
 			    <fieldset>
 		        <legend class="filter-title filter-title-grid">Сетка:</legend>
 		        <div class="filter-container">
-			        <ul class="filter-grid">
+			        <ul class="filter-grid" >
 			        	<li class="filter-grid-list">
 			        		<input class="input-filter-grid" type="radio" name="filter-grid-element" value="filter-grid-element-adaptive" id="element-adaptive">
-			        		<label id="label-element1" class="label-element label-element-adaptive" for="element-adaptive"></label>
+			        		<label class="label-element label-element-adaptive" for="element-adaptive"></label>
 			        		<div class="filter-grid-text"><p>Адаптивная</p></div>
 			        	</li>			        	
 			        	<li class="filter-grid-list">	           		
 		            		<input class="input-filter-grid" type="radio" name="filter-grid-element" value="filter-grid-element-fixed" id="element-fixed" checked>
-		            		<label id="label-element2" class="label-element label-element-fixed" for="element-fixed"></label> 
+		            		<label class="label-element label-element-fixed" for="element-fixed"></label> 
 		            		<div class="filter-grid-text"><p>Фиксированная</p></div>
 		            	</li>		            	
 			        	<li class="filter-grid-list">	
 		            		<input class="input-filter-grid" type="radio" name="filter-grid-element" value="filter-grid-element-liquid" id="element-liquid">
-		            		<label id="label-element3" class="label-element label-element-liquid" for="element-liquid"></label> 
+		            		<label class="label-element label-element-liquid" for="element-liquid"></label> 
 		            		<div class="filter-grid-text"><p>Резиновая</p></div>
 		            	</li>		            			         	
 		            </ul>
@@ -88,27 +88,27 @@
 			        <ul class="filter-features">
 			        	<li class="filter-features-list">
 			        		<input class="input-features" type="checkbox" name="slider" id="slider"  checked>
-		            		<label id="label-features1" class="label-features" for="slider"></label>
+		            		<label class="label-features" for="slider"></label>
 		            		<div class="filter-features-text"><p>Слайдер</p></div>
 			        	</li>			 
 			        	<li class="filter-features-list">
 			        		<input class="input-features"type="checkbox" name="advantages" id="advantages" checked>
-		            		<label id="label-features2" class="label-features" for="advantages"></label> 
+		            		<label class="label-features" for="advantages"></label> 
 		            		<div class="filter-features-text"><p>Блок преимуществ</p></div>
 			        	</li>			        	
 			        	<li class="filter-features-list">
 			        		<input class="input-features" type="checkbox" name="news" id="news">
-		            		<label id="label-features3" class="label-features" for="news"></label> 
+		            		<label class="label-features" for="news"></label> 
 		            		<div class="filter-features-text"><p>Новости</p></div>
 			        	</li>			        	
 			        	<li class="filter-features-list">
 			        		<input class="input-features" type="checkbox" name="galery" id="galery">
-		            		<label id="label-features4" class="label-features" for="galery"></label>
+		            		<label class="label-features" for="galery"></label>
 		            		<div class="filter-features-text"><p>Галерея</p></div>
 			        	</li>			        	
 			        	<li class="filter-features-list">
 			        		<input class="input-features" type="checkbox" name="cart" id="cart">
-		            		<label id="label-features5" class="label-features" for="cart"></label> 
+		            		<label class="label-features" for="cart"></label> 
 		            		<div class="filter-features-text"><p>Корзина</p></div>
 			        	</li>
 			        </ul>	
@@ -121,42 +121,99 @@
       	<form method="get" class="filter" action="catalog.html">
 		        <div class="filter-prais">
 			        <ul class="filter-prais-list">
-			        	<li>Сортировать:</li>
+			        	<li class="filter-prais-list-title">Сортировать:</li>
 			        	<li>
-			        		<input class="input-fat-list" type="radio" name="product-fat" value="percent_0" id="percent_0">
-			        		<label id="lfl" class="label-fat-list" for="percent_0"></label>
-			       
+			        		<input class="filter-prais-input" type="radio" name="filter-prais-elements" value="filter-prais-price" id="price" checked>
+			        		<label class="filter-prais-label" for="price">По цене</label>	
 			        	</li>
-			        	<li class="product-fat-list-items"> <p>0%</p></li>
 			        	<li>	           		
-		            		<input class="input-fat-list" type="radio" name="product-fat" value="percent_below_10" id="percent_below_10" checked>
-		            		<label id="lfl" class="label-fat-list" for="percent_below_10"></label> 
+		            		<input class="filter-prais-input" type="radio" name="filter-prais-elements" value="filter-prais-type" id="type">
+		            		<label class="filter-prais-label" for="type">По типу</label> 
 		            	</li>
-		            	<li class="product-fat-list-items"> <p>до 10%</p></li>
 			        	<li>	
-		            		<input class="input-fat-list" type="radio" name="product-fat" value="percent_below_30" id="percent_below_30">
-		            		<label id="lfl" class="label-fat-list" for="percent_below_30"></label> 
-		            	</li>
-		            	<li class="product-fat-list-items"> <p>до 30%</p></li>
-			         	
+		            		<input class="filter-prais-input" type="radio" name="filter-prais-elements" value="filter-prais-named" id="named">
+		            		<label class="filter-prais-label" for="named">По названию</label> 
+		            	</li>	   
+		            	<li>	
+		            		<input class="filter-prais-input-minmax" type="radio" name="filter-prais-minmax" value="filter-prais-min" id="min" checked>
+		            		<label class="filter-prais-label-min" for="min"></label> 
+		            	</li>	
+		            	<li>	
+		            		<input class="filter-prais-input-minmax" type="radio" name="filter-prais-minmax" value="filter-prais-max" id="max">
+		            		<label class="filter-prais-label-max" for="max"></label> 
+		            	</li>	     
 		            </ul>
 		        </div>
       	</form>
       	<div class="catalog-items">
-      		<div class="catalog-item catalog-item1"></div>
-      		<div class="catalog-item catalog-item2"></div>
-      		<div class="catalog-item catalog-item3"></div>
-      		<div class="catalog-item catalog-item4"></div>
-      		<div class="catalog-item catalog-item5"></div>
-      		<div class="catalog-item catalog-item6"></div>
+	      		<div class="catalog-item-container">
+	      			<div class="catalog-item-head">
+	      				<div class="circle"></div>
+	      				<div class="circle"></div>	
+	      				<div class="circle"></div>
+	      			</div>
+	      			<div class="catalog-item catalog-item1">
+	      				<div class="catalog-item-cell">
+	      					<h2 class="catalog-item-cell-title"><a href="">SEDONA</a></h2>
+	      					<p class="catalog-item-cell-text">Информационный сайт<br>  для туристов</p>
+	      					<button class="catalog-item-cell-button">9 900 ₽</button>
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div class="catalog-item-container">
+	      			<div class="catalog-item-head">
+	      				<div class="circle"></div>
+	      				<div class="circle"></div>	
+	      				<div class="circle"></div>
+	      			</div>
+	      			<div class="catalog-item catalog-item2">
+	      				<div class="catalog-item-cell">
+		      					<h2 class="catalog-item-cell-title"><a href="">PINK APP</a></h2>
+		      					<p class="catalog-item-cell-text">Продуктовый лендинг<br> приложения для iOS и Android</p>
+		      					<button class="catalog-item-cell-button">9 900 ₽</button>
+		      			</div>
+	      			</div>
+	      		</div>
+      		<div>
+      			<div class="catalog-item-head">
+      				<div class="circle"></div>
+      				<div class="circle"></div>	
+      				<div class="circle"></div>
+      			</div>
+      			<div class="catalog-item catalog-item3"></div>
+      		</div>
+      		<div>
+      			<div class="catalog-item-head">
+      				<div class="circle"></div>
+      				<div class="circle"></div>	
+      				<div class="circle"></div>
+      			</div>
+      			<div class="catalog-item catalog-item4"></div>
+      		</div>
+      		<div>
+      			<div class="catalog-item-head">
+      				<div class="circle"></div>
+      				<div class="circle"></div>	
+      				<div class="circle"></div>
+      			</div>
+      			<div class="catalog-item catalog-item5"></div>
+      		</div>
+      		<div>
+      			<div class="catalog-item-head">
+      				<div class="circle"></div>
+      				<div class="circle"></div>	
+      				<div class="circle"></div>
+      			</div>
+      			<div class="catalog-item catalog-item6"></div>
+      		</div>
 
       	</div>
       	<div class="paginator">
       		<ul class="paginator-list">
-      			<li><a href=""> 1</a></li>
-      			<li><a href=""> 2</a></li>
-      			<li><a href=""> 3</a></li>
-      			<li><a href=""> Следующая</a></li>
+      			<li><a class="paginator-list-element-active">1</a></li>
+      			<li><a class="paginator-list-element" href="">2</a></li>
+      			<li><a class="paginator-list-element" href="">3</a></li>
+      			<li><a class="paginator-list-element" href="">Следующая</a></li>
       		</ul>
       	</div>
       </div>
@@ -174,9 +231,9 @@
       </div>
       <div class="footer">
          <div class="social">
-            <div class="social-element social-element-vk"><img src="img/vk-icon.svg"></div>
-            <div class="social-element social-element-fb"><img src="img/fb-icon.svg"></div>
-            <div class="social-element social-element-inst"><img src="img/insta-icon.svg"></div>
+            <a href="" class="social-element social-element-vk"><img src="img/vk-icon.svg"></a>
+            <a href="" class="social-element social-element-fb"><img src="img/fb-icon.svg"></a>
+            <a href="" class="social-element social-element-inst"><img src="img/insta-icon.svg"></a>
          </div>
          <div class="footer-text">
             <h2>Давайте дружить, это выгодно!</h2>
